@@ -51,8 +51,15 @@ def banner():
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀''','magenta'))
 
 def help():
-    
     ()
     
-def option:()
+def option():
     ()
+    
+def attack():
+    
+    '  Отправлено!  '
+	'|    Траффик   '
+	'|    Пакет(ы)  '
+	'|     Бит(ы)   '
+	'\n{}').format('-'*63)
