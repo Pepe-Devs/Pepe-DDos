@@ -18,7 +18,7 @@
 
 
 
-
+# ИМПОРТИРУЕМ ВСЯКУЮ ФИГНЮ
 import sys
 import time
 import socket
@@ -29,7 +29,7 @@ from optparse import OptionParser
 from pinject import IP, UDP
 from termcolor import colored
 
-
+# ЛОГО (ПРОФИ ЗОВУТ ЕГО БАННЕР)
 def banner():
     system("cls" if name == "nt" else "clear")
     print(colored( '''
