@@ -51,10 +51,21 @@ def banner():
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢻⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀''','magenta'))
 
+# Здраствуйте, чем помочь?	
 def help():
-    ()
+'Файл расширения DNS и домены для разрешения (например: dns.txt:[evildomain.com|domains_file.txt]',
+'Файл усиления NTP',
+'Файл расширения SNMP',
+'Файл расширения SSDP',
+'Количество потоков (по умолчанию=1)' )    ()
     
+# КОМАНДЫ	
 def option():
+	(('-d', '--dns'), dict(dest='dns', metavar='FILE:FILE|DOMAIN', help=HELP[0])),
+	(('-n', '--ntp'), dict(dest='ntp', metavar='FILE', help=HELP[1])),
+	(('-s', '--snmp'), dict(dest='snmp', metavar='FILE', help=HELP[2])),
+	(('-p', '--ssdp'), dict(dest='ssdp', metavar='FILE', help=HELP[3])),
+	(('-a', '--потоки'), dict(dest='threads', type=int, default=1, metavar='N', help=HELP[4])) )
     ()
 
 #АНАНАСЫ АТАКУЮТ!!!    
