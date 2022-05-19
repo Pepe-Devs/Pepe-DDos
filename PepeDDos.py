@@ -29,6 +29,15 @@ from optparse import OptionParser
 from pinject import IP, UDP
 from termcolor import colored
 
+
+# Как использовать?
+def usage():
+	
+'''
+%prog target.com [options]        # DDoS
+%prog benchmark [options]         # Calculate AMPLIFICATION factor
+'''
+
 # ЛОГО (ПРОФИ ЗОВУТ ЕГО БАННЕР)
 def banner():
     system("cls" if name == "nt" else "clear")
@@ -67,6 +76,13 @@ def option():
 	(('-p', '--ssdp'), dict(dest='ssdp', metavar='FILE', help=HELP[3])),
 	(('-a', '--потоки'), dict(dest='threads', type=int, default=1, metavar='N', help=HELP[4])) )
     ()
+
+def betchmark(): = (
+	'Протокол'
+	'|  IP  Адрес'
+	'|     Расширение'
+	'|     Домен'
+	'\n{}').format('-'*75)
 
 #АНАНАСЫ АТАКУЮТ!!!    
 def attack():
