@@ -234,7 +234,7 @@ def InputOption(question,options,default):
 		if ans == "":
 			ans = default
 		elif ans not in options:
-			print("> Пожалуйста, введите правильную опцию)
+			print("> Пожалуйста, введите правильную опцию")
 			ans = ""
 			continue
 	return ans
